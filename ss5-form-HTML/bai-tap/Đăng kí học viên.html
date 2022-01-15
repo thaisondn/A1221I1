@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo form Đăng kí học viên</title>
+</head>
+<style>
+    div.b { text-align: center;
+        background-color: chartreuse;
+        color: brown;
+        border-radius: 20px;
+    }
+    div.a {  text-align: left;
+        background-color: deepskyblue;
+        border-radius: 20px;
+    }
+
+</style>
+<body>
+<div class="a">
+    <div class="b">
+        <form>
+            <h1>ĐĂNG KÍ HỌC VIÊN </h1>
+        </form>
+    </div>
+    <form>
+        <tr>
+            <td><label for="username"> Họ Và Tên:</label></td>
+            <td><input type="text" name="username" id="username" required></td>
+        </tr>
+        <tr>
+            <td>Ngày Sinh:</td>
+            <td><input type="text" name="ngày sinh"</td>
+        </tr>
+        <br>
+        <tr>
+            <td>Giới Tính:</td>
+            <td><input type="radio" name="giới tính" id="male" value="male"> <label for="male">Nữ</label>
+            <td><input type="radio" name="giới tính" id="date" value="date"> <label for="date">Nam</label>
+        </tr><br>
+        <tr>
+            <td> Địa Chỉ:</td>
+            <td><input type="text" name="địa chỉ"></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>
+                <select name="lớp">
+                    <option value="js">Javascript</option>
+                    <option value="java">Java core</option>
+                    <option value="java2">Java web</option>
+                    <option value="java3">Java spring</option>
+                </select>
+            </td>
+        </tr>
+        <br><br>
+        <tr>
+            <td>Email:<td>
+            <td><input type="text" name="email" id="email" required></td>
+        </tr>
+        <tr>
+            <td> Điện Thoại:</td>
+            <td><input type="text" name="điện thoại" id="điện thoại" required></td>
+        </tr>
+            <tr>
+                <table>
+                    <th><input type="submit" value="Đăng Kí"><br></th>
+                    <th><input type="reset" value=" Nhập Lại"><br></th>
+                </table>
+            </tr>
+</div>
+</body>
+</html>
