@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap=-2</title>
+</head>
+<body>
+<label>Amount</label>
+<input type="number" id="dc">
+<label>Fr</label>
+<select id="fr">
+    <option> ĐỘ F </option>
+    <option> ĐỘ C </option>
+</select>
+<label>T</label>
+<select id="to">
+    <option> ĐỘ C </option>
+    <option> Độ F </option>
+</select>
+<button onclick="CD()"> Chuyển Đổi </button>
+<h1 id="rs">result</h1>
+<script>
+    function CD() {
+        let amount = document.getElementById("dc").value ;
+        let from = document.getElementById("fr").value;
+        let to = document.getElementById("to").value;
+        let result = 0;
+        if ( from === "ĐỘ F" && to === "ĐỘ C" ) {
+            result = (5 * ( amount - 32))/ 9;
+        } else if ( from === "ĐỘ C" && to === "ĐỘ F"){
+            result = (9 * amount)/5 + 32;
+        } else {
+            result = amount;
+        }
+        document.getElementById("rs").innerHTML = result;
+    }
+</script>
+</body>
+</html>

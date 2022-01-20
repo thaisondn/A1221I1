@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đổi tiền </title>
+</head>
+<style>
+    div.a {
+        text-align: center;
+        background-color: #ff003b;
+        color: yellow;
+        border-radius: 50px;
+    }
+</style>
+<body>
+<div class="a">
+<h1>Chuyển Đổi Tiền Tệ</h1>
+<label>Amount:</label>
+<input type="number" id="num">
+<label>From</label>
+<select id="from">
+    <option> Vietnam </option>
+    <option> USD </option>
+</select>
+<label>To</label>
+<select id="to">
+    <option> Vietnam </option>
+    <option> USD </option>
+</select>
+<button onclick="convertMoney()">Convert</button>
+<h1 id="rs">Result</h1>
+<script>
+    function convertMoney() {
+        let money = document.getElementById("num").value ;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result = 0;
+
+        if ( from === "USD" && to === "Vietnam" ) {
+
+            result = money * 23000;
+
+        } else if ( from === "Vietnam" && to === "USD"){
+
+            result = money / 23000 ;
+
+        } else {
+            result = money ;
+        }
+        document.getElementById("rs").innerHTML = result;
+    }
+</script>
+</div>
+</body>
+</html>

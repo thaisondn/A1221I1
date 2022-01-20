@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap-1</title>
+</head>
+<body>
+<h1> Điểm vật lí :</h1>
+<input type="number" id="vl">
+ <h1> Điểm hóa học :</h1>
+<input type="number" id="hh">
+<h1> Điểm sinh học :</h1>
+ <input type="number" id="sh"><br><br>
+<button onclick="dtb()"> Điểm trung bình </button>
+<button onclick="add()"> Điểm tổng </button>
+<h1 id="rs"> kết quả </h1>
+<script>
+    function add() {
+         let vl = document.getElementById("vl").value;
+         let hh = document.getElementById("hh").value;
+        let sh = document.getElementById("sh").value;
+         let result = parseInt(vl) + parseInt(hh) + parseInt(sh)
+         document.getElementById("rs").innerHTML = result;
+    }
+    function dtb() {
+        let vl = document.getElementById("vl").value;
+        let hh = document.getElementById("hh").value;
+        let sh = document.getElementById("sh").value;
+        let result = (parseInt(vl) + parseInt(hh) + parseInt(sh))/3
+        document.getElementById("rs").innerHTML = result;
+    }
+</script>
+</body>
+</html>
