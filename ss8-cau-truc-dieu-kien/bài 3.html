@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap-3</title>
+</head>
+<body>
+ Bán kính :
+<input type="number" id="bk">
+<button onclick="dtt()"> Diện Tích </button>
+<button onclick="cvt()"> Chu Vi </button>
+<h1 id="rs"> result </h1>
+<script>
+    function dtt(){
+        let bk = document.getElementById("bk").value;
+        let result = parseInt( bk ) * parseInt( bk )* 3.14;
+        document.getElementById("rs").innerHTML = result;
+    }
+    function cvt(){
+        let bk = document.getElementById("bk").value;
+        let result = parseInt( bk )* 2 * 3.14
+        document.getElementById("rs").innerHTML = result;
+    }
+</script>
+</body>
+</html>

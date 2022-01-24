@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-2</title>
+</head>
+<body>
+Nhập Tuổi:
+<input type="number" id="num">
+<button onclick="tuoi()"> Kiểm Tra </button>
+<h1 id="rs"> Kết Quả</h1>
+<script>
+    function tuoi() {
+        let num = document.getElementById("num").value;
+        let result = 0;
+        document.getElementById("rs").innerHTML = result;
+        if (result ==15) {
+            document.write("Đủ điều kiện học lớp 10");
+        } else if (result !=15){
+            document.write("Chưa đủ điều kiện học lớp 10");
+        }
+    }
+</script>
+</body>
+</html>

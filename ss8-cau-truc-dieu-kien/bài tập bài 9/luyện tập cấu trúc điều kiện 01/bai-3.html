@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-3</title>
+</head>
+<body>
+Nhập Số Nguyên Bất Kỳ:
+<input type="number" id="num">
+<button onclick="sn()">Kiểm Tra</button>
+<h1 id="rs">kết quả</h1>
+<script>
+    function sn() {
+        let num = document.getElementById("num").value;
+        let result = num ;
+        document.getElementById("rs").innerHTML = result;
+        if (result > 0) {
+            document.write("Lớn hơn 0");
+        } else if (result < 0) {
+            document.write("Nhỏ hơn 0");
+        }
+    }
+</script>
+</body>
+</html>

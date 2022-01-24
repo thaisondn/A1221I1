@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 5</title>
+</head>
+<body>
+Nhập vào số điểm :
+<input type="number" id="num">
+<button onclick="sn()">Kiểm Tra</button>
+<h1 id="rs">kết quả</h1>
+<script>
+    function sn() {
+        let num = document.getElementById("num").value;
+        let result = num;
+        document.getElementById("rs").innerHTML = result;
+        if (result >= 8) {
+            document.write("Đạt học sinh giỏi");
+        } else if (result < 8 && result >= 6) {
+            document.write("Đạt học sinh khái");
+        } else if (result < 6 && result > 4) {
+            document.write("Đạt học trung bình ");
+        } else if (result < 4) {
+            document.write("thị lại em ơi :))) ");
+        }
+    }
+</script>
+</body>
+</html>
