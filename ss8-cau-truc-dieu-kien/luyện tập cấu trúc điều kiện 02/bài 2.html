@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai-tap-2</title>
+</head>
+<body>
+Độ dài (M):
+<input type="number" id="num">
+<button onclick="add()">Chuyển Đổi</button>
+<h1 id="result">Kết Quả</h1>
+<script>
+    function add() {
+        let num = document.getElementById("num").value;
+        let result = parseInt(num) * 3.2808;
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>
